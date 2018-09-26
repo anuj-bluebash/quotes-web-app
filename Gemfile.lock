@@ -60,6 +60,8 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     crass (1.0.4)
     diff-lcs (1.3)
     erubis (2.7.0)
@@ -91,6 +93,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    hashdiff (0.3.7)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     immutable-struct (2.3.0)
@@ -146,6 +149,10 @@ GEM
       bundler (>= 1.3.0)
       railties (= 5.0.7)
       sprockets-rails (>= 2.0.0)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -182,6 +189,7 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    safe_yaml (1.0.4)
     sass (3.6.0)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -221,6 +229,10 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    webmock (3.4.2)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -246,6 +258,7 @@ DEPENDENCIES
   pg
   puma (~> 3.0)
   rails (~> 5.0.0)
+  rails-controller-testing
   rspec-rails
   sass-rails (~> 5.0)
   spring
@@ -254,6 +267,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console
+  webmock
 
 BUNDLED WITH
    1.16.5

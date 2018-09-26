@@ -46,3 +46,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# HTTP/REST API client library.
+gem 'faraday', '~> 0.9.2'
+
+# Creates struct-like classes (that can build value objects) that do not have setters and also have better constructors than Ruby's built-in Struct.
+gem 'immutable-struct'

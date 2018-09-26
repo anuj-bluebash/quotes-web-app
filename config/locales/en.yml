@@ -21,3 +21,4 @@
 
 en:
   hello: "Hello world"
+  invalid_api_response: 'Invalid API Response'

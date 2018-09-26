@@ -1,0 +1,9 @@
+<% @quotes.each do |quote| %>
+  <section class="ArticleCopy">
+    <p><h4><%= quote.title %></h4></p>
+    <blockquote>
+      <p><%= quote.content.html_safe %></p>
+    </blockquote>
+    <p>This example is an exerpt from <cite>Sitepoint - <a href=<%= quote.link %> ><%= quote.link %></a></cite></p>
+  </section>
+<% end %>
